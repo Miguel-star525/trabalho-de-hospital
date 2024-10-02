@@ -1,0 +1,87 @@
+<!-- Página de Consultas -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultas - Site de Hospital</title>
+  <link rel="stylesheet" type="text/css" href="css/estilos-consulta.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Hospital</a>
+      <a href="cadastro.html">Cadastro</a>
+      <a href="login.html">Login</a>
+      <a href="consultas.html">Consultas</a>
+      <a href="sobre-nos.html">Sobre Nós</a>
+    </nav>
+  </header>
+  
+  <main>
+    <h2>Consultas</h2>
+    <p>Aqui você pode consultar as informações sobre as consultas agendadas:</p>
+    
+    <!-- Seção para visualizar consultas agendadas -->
+    <table id="consultas">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Hora</th>
+          <th>Médico</th>
+          <th>Especialidade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>15/10/2023</td>
+          <td>10:00</td>
+          <td>Dr. João Silva</td>
+          <td>Cardiologia</td>
+        </tr>
+        <tr>
+          <td>20/10/2023</td>
+          <td>14:30</td>
+          <td>Dra. Ana Costa</td>
+          <td>Clínica Geral</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Seção para agendar nova consulta -->
+    <section id="marcar-consulta">
+      <h2>Agendar Nova Consulta</h2>
+      <form id="agendar-consulta">
+        <label for="data-consulta">Data da Consulta:</label>
+        <input type="date" id="data-consulta" name="data-consulta" required>
+        
+        <label for="hora-consulta">Hora da Consulta:</label>
+        <input type="time" id="hora-consulta" name="hora-consulta" required>
+        
+        <label for="medico">Médico:</label>
+        <select id="medico" name="medico" required>
+          <option value="">Selecione...</option>
+          <option value="dr-joao">Dr. João Silva</option>
+          <option value="dra-ana">Dra. Ana Costa</option>
+          <option value="dr-pedro">Dr. Pedro Almeida</option>
+        </select>
+        
+        <label for="especialidade">Especialidade:</label>
+        <select id="especialidade" name="especialidade" required>
+          <option value="">Selecione...</option>
+          <option value="clinica-geral">Clínica Geral</option>
+          <option value="cardiologia">Cardiologia</option>
+          <option value="ortopedia">Ortopedia</option>
+          <option value="pediatria">Pediatria</option>
+        </select>
+
+        <input type="submit" value="Agendar Consulta">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Site de Hospital</p>
+  </footer>
+</body>
+</html>

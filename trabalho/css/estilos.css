@@ -1,0 +1,111 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #007bff;
+  padding: 15px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo principal */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #007bff;
+  text-align: center;
+}
+
+/* Estilo das seções */
+section {
+  margin-bottom: 40px;
+}
+
+/* Estilo dos serviços e especialidades */
+.servicos, .especialidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.servico, .especialidade {
+  background: #e9ecef;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Estilo do rodapé */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #007bff;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilo do slider */
+.slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.slider img {
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 38%;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Estilo do botão de marcação */
+.botao-marcacao {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.botao-marcacao:hover {
+  background-color: #218838;
+}
